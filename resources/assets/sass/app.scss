@@ -1,0 +1,33 @@
+@import "../../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+html, body {
+  height: 100%;
+}
+
+// 訊息列表框
+#chat-room {
+  border: 1px solid #ccc;
+  height: 20rem;
+  padding: 1rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  // 單則訊息
+  .message {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+// 輸入訊息的表單
+#send-message {
+  margin-top: -1px;
+
+  .input-group-addon {
+    border-top-left-radius: 0;
+  }
+
+  .input-group-btn > .btn {
+    border-top-right-radius: 0;
+  }
+}
